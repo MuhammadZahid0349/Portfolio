@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:portfolio/Screens/HomeScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,10 +20,9 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return GetMaterialApp(
             builder: EasyLoading.init(),
-            // home: SplashScrren(),
+            home: HomeScreen(),
             debugShowCheckedModeBanner: false,
           );
-    
+        });
   }
-    );}
 }
