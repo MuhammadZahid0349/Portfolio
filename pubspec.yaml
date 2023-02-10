@@ -39,6 +39,7 @@ dependencies:
   velocity_x: ^3.6.0
   flutter_screenutil: ^5.6.0
   flutter_easyloading: ^3.0.5
+  
 
 dev_dependencies:
   flutter_test:
