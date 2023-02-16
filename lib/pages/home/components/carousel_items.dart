@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/utils/constants.dart';
 import 'package:portfolio/utils/utils.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 import '../../../models/carousel_item_model.dart';
 
@@ -25,79 +27,70 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                       style: GoogleFonts.josefinSans(
                         color: kPrimaryColor,
                         fontWeight: FontWeight.w900,
-                        fontSize: 18.0,
+                        fontSize: 20.sp,
                         letterSpacing: 2,
                       ),
                     ),
-                    const SizedBox(
-                      height: 18.0,
-                    ),
+                    18.h.heightBox,
                     Text(
-                      "Agnel Selvan".toUpperCase(),
+                      "Wind Tech Solutions".toUpperCase(),
                       style: GoogleFonts.josefinSans(
-                        fontSize: 40.0,
+                        fontSize: 30.sp,
                         fontWeight: FontWeight.w900,
                         height: 1.3,
                         letterSpacing: 2.3,
                       ),
                     ),
-                    const SizedBox(
-                      height: 10.0,
-                    ),
+                    10.h.heightBox,
                     Row(
-                      children: const [
+                      children: [
                         Text(
-                          "Software Engineer, ",
-                          style: TextStyle(
-                            color: kCaptionColor,
-                            fontSize: 15.0,
-                            height: 1.0,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
+                          "Android and Web Development, ",
+                          style: GoogleFonts.josefinSans(
+                              color: kPrimaryColor,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 16.sp,
+                              letterSpacing: 1,
+                              height: 1.0),
                         ),
                         Icon(
                           Icons.location_on,
-                          color: kCaptionColor,
+                          color: logoSky,
                           size: 14,
                         ),
-                        SizedBox(
-                          width: 2,
-                        ),
+                        2.w.widthBox,
                         Text(
-                          "Mumbai",
-                          style: TextStyle(
-                            color: kCaptionColor,
-                            fontSize: 15.0,
-                            height: 1.0,
-                          ),
+                          "Karachi",
+                          style: GoogleFonts.josefinSans(
+                              color: kPrimaryColor,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 16.sp,
+                              letterSpacing: 2,
+                              height: 1.0),
                         )
                       ],
                     ),
-                    const SizedBox(
-                      height: 25.0,
-                    ),
+                    25.h.heightBox,
                     MouseRegion(
                       cursor: SystemMouseCursors.click,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: kPrimaryColor,
-                          borderRadius: BorderRadius.circular(8.0),
+                          color: logoSky,
+                          borderRadius: BorderRadius.circular(10.r),
                         ),
-                        height: 48.0,
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 28.0,
+                        height: 48.h,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 28.h,
                         ),
                         child: TextButton(
                           onPressed: () {
                             Utilty.openUrl(AppConstants.linkedInUrl);
                           },
                           child: Text(
-                            "Let's Talk",
+                            "Let's  Talk",
                             style: TextStyle(
                               color: Colors.grey[800],
-                              fontSize: 13.0,
+                              fontSize: 15.sp,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -118,8 +111,8 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                         .map((e) => InkWell(
                               onTap: e.onTap,
                               child: Container(
-                                width: 20,
-                                height: 20,
+                                width: 20.w,
+                                height: 20.h,
                                 margin: const EdgeInsets.all(10),
                                 child: Image.asset(e.title),
                               ),
@@ -132,8 +125,9 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
           ),
         ),
         image: Container(
-          child:
-              SvgPicture.asset(AppConstants.guySvg, semanticsLabel: 'Guy Logo'),
+          child: Image.asset(
+            AppConstants.Mainbg,
+          ),
         ),
       ),
     );

@@ -28,28 +28,38 @@ class HeaderLogo extends StatelessWidget {
             onTap: () {
               Navigator.pushNamed(context, Routes.initial);
             },
-            child: RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: "Wind Te",
-                    style: GoogleFonts.josefinSans(
-                        fontSize: 26.0,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 1.5,
-                        color: Colors.black),
+            child: Row(
+              children: [
+                Container(
+                    height: 50.h,
+                    child: Image.asset(
+                      AppConstants.windLogo,
+                      fit: BoxFit.contain,
+                    )),
+                RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: "ind Te",
+                        style: GoogleFonts.josefinSans(
+                            fontSize: 26.0,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 1.5,
+                            color: Colors.black),
+                      ),
+                      TextSpan(
+                        text: "ch Solutions",
+                        style: GoogleFonts.josefinSans(
+                          color: kPrimaryColor,
+                          fontSize: 26.0,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 1.5,
+                        ),
+                      )
+                    ],
                   ),
-                  TextSpan(
-                    text: "ch Solutions",
-                    style: GoogleFonts.josefinSans(
-                      color: kPrimaryColor,
-                      fontSize: 26.0,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1.5,
-                    ),
-                  )
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),

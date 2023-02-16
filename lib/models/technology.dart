@@ -10,30 +10,33 @@ class TechnologyModel {
 class TechnologyConstants {
   static TechnologyModel python =
       TechnologyModel("Python", AppConstants.pythonImage);
-  static TechnologyModel php = TechnologyModel("Python", AppConstants.phpImage);
+
+  static TechnologyModel csharp =
+      TechnologyModel("C #", AppConstants.CsharpImage);
+
   static TechnologyModel flutter =
       TechnologyModel("Flutter", AppConstants.flutterImage);
-  static TechnologyModel flask =
-      TechnologyModel("Flask", AppConstants.flaskImage);
+
+  static TechnologyModel Android =
+      TechnologyModel("Android", AppConstants.androidImage);
+
   static TechnologyModel firebase =
       TechnologyModel("Firebase", AppConstants.firebaseImage);
-  static TechnologyModel razorPay =
-      TechnologyModel("Razor Pay", AppConstants.razorPayImage);
+
   static TechnologyModel cPlus =
       TechnologyModel("C++", AppConstants.cPlusImage);
-  static TechnologyModel javascript =
-      TechnologyModel("Javascript", AppConstants.javascriptImage);
-  static TechnologyModel swift =
-      TechnologyModel("Swift", AppConstants.swiftImage);
-  static TechnologyModel sceneKit =
-      TechnologyModel("SceneKit", AppConstants.sceneKitImage);
+
+  static TechnologyModel sql = TechnologyModel("SQL", AppConstants.sqlImage);
+
+  // static TechnologyModel razorPay =
+  //     TechnologyModel("RazorPay", AppConstants.razorPayImage);
 
   static List<TechnologyModel> technologyLearned = [
     flutter,
-    swift,
+    sql,
+    csharp,
     cPlus,
     python,
-    javascript,
-    flask
+    firebase,
   ];
 }

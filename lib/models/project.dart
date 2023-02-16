@@ -34,9 +34,9 @@ class ProjectModel {
       techUsed: [
         TechnologyConstants.flutter,
         TechnologyConstants.firebase,
-        TechnologyConstants.flask,
+        TechnologyConstants.csharp,
         TechnologyConstants.python,
-        TechnologyConstants.razorPay
+        TechnologyConstants.sql
       ],
       buttonText: "Github Link",
     ),
@@ -47,8 +47,8 @@ class ProjectModel {
       appPhotos: AppConstants.crossTheRoadImage,
       projectLink: "https://github.com/AgnelSelvan/Cross-the-road",
       techUsed: [
-        TechnologyConstants.swift,
-        TechnologyConstants.sceneKit,
+        TechnologyConstants.flutter,
+        TechnologyConstants.sql,
       ],
       buttonText: "Github Link",
     ),
@@ -82,8 +82,8 @@ class ProjectModel {
       appPhotos: AppConstants.computerStoreImage,
       projectLink: "https://github.com/AgnelSelvan/computer-store.git",
       techUsed: [
-        TechnologyConstants.php,
-        TechnologyConstants.razorPay,
+        TechnologyConstants.sql,
+        TechnologyConstants.flutter,
       ],
     ),
     ProjectModel(
